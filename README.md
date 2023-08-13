@@ -1,6 +1,8 @@
 # 🤖 PersonaBlend AI 🧠📝
 Welcome to the world of PersonaBlend AI! 🚀 Where engaging, knowledgeable, and empathetic conversations converge seamlessly! This project represents the culmination of cutting-edge research in the realm of open-domain chatbots, harmoniously blending the brilliance of BlenderBot and ChatGPT within the powerful textbase framework. ✨
 
+💻[Demo Video](https://drive.google.com/file/d/1Ku4BQFPep6l6mictVnZHXgFLM3v1toF9/preview)
+
 ### Abstract 📜
 Building open-domain chatbots is a fascinating yet challenging pursuit in the realm of machine learning. While the scalability of neural models and training data has shown promise, our project delves deeper to unveil the true potential of chatbots. A meaningful conversation is an art, elegantly weaving engaging topics, attentive listening, insightful questions, enlightening answers, and just the right touch of empathy and personality. We've harnessed these elements to craft an advanced chatbot that excels across diverse communication scenarios.
 
