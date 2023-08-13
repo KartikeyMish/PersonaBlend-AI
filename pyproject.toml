@@ -15,7 +15,9 @@ langchain = "^0.0.239"
 fastapi = "*"
 uvicorn = "*"
 pydantic = "^1.9.9"
-
+boto3 = "*"
+wavio = "^0.0.4"
+scipy = "^1.7.1"
 
 [build-system]
 requires = ["poetry-core"]

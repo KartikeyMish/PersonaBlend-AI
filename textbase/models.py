@@ -33,8 +33,9 @@ class OpenAI:
         )
         return response["choices"][0]["message"]["content"]
 
+# Importing Different Hugging Face Models
 
-class HuggingFace:
+class HuggingFace: 
     api_key = None
 
     @classmethod
@@ -42,7 +43,7 @@ class HuggingFace:
         cls,
         system_prompt: str,
         message_history: list[Message],
-        model: typing.Optional[str] = "microsoft/DialoGPT-small",
+        model: typing.Optional[str] = "facebook/blenderbot-3B",
         max_tokens: typing.Optional[int] = 3000,
         temperature: typing.Optional[float] = 0.7,
         min_tokens: typing.Optional[int] = None,
@@ -89,18 +90,3 @@ class HuggingFace:
             return response["generated_text"]
         except Exception as ex:
             print(f"Error occured while using this model, please try using another model, Exception was {ex}")
-
-class BotLibre:
-    application = None
-    instance = None
-
-    @classmethod
-    def generate(
-        cls,
-        message_history: list[Message],
-    ):
-        request = {"application":cls.application, "instance":cls.instance,"message":message_history[-1].content}
-        response = requests.post('https://www.botlibre.com/rest/json/chat', json=request)
-        data = json.loads(response.text) # parse the JSON data into a dictionary
-        message = data['message']
-        return message
