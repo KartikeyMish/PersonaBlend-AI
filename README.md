@@ -1,45 +1,66 @@
-#
+# 🤖 PersonaBlend AI 🧠📝
+
+ PersonaBlend AI is a project that combines the capabilities of BlenderBot and ChatGPT, creating an advanced chatbot with diverse conversational personas. ✨
 
 ## Framework: Textbase
-
 ✨ Textbase is a framework for building chatbots using NLP and ML. ✨
 
-Just implement the `on_message` function in `main.py` and Textbase will take care of the rest :)
+Just implement the `on_message` function in `main.py`, and Textbase will take care of the rest! 😊
 
-Since it is just Python you can use whatever models, libraries, vector databases and APIs you want.
+Since it is just Python, you can use whatever models, libraries, vector databases, and APIs you want.
 
-_Coming soon:_
+## Project Features 🚀
 
-- [ ] PyPI package
-- [ ] SMS integration
-- [ ] Easy web deployment via `textbase deploy`
-- [ ] Native integration of other models (Claude, Llama, ...)
+- Integration of HuggingFace's BlenderBot api 🤖
+- Integration of OpenAI's GPT-3.5 Turbo 🚄
+- distress-record for conversation history 📜
+- transcript and AWS integration (work in progress) 🌐
+- Twilio integration (work in progress) 📱
 
-## Installation
+## Installation and Setup 🛠️
 
-Clone the repository and install the dependencies using [Poetry](https://python-poetry.org/) (you might have to [install Poetry](https://python-poetry.org/docs/#installation) first).
+1. Clone the repository:
 
-```bash
-git clone https://github.com/cofactoryai/textbase
-cd textbase
-poetry shell
-poetry install
-```
+    ```
+    git clone https://github.com/yourusername/personablend-ai
+    cd personablend-ai
+    ```
 
-## Start development server
+2. Install the dependencies using Poetry:
 
-> If you're using the default template, **remember to set the OpenAI API key** in `main.py`.
+    ```
+    poetry shell
+    poetry install
+    ```
 
-Run the following command:
+## Getting Started 🚀
 
-```bash
-poetry run python textbase/textbase_cli.py test main.py
-```
+1. Set up the necessary API keys:
+   - Configure Hugging Face's BlenderBot credentials 🤖
+   - Set up OpenAI's GPT-3.5 Turbo credentials 🚄
+   - Configure AWS credentials for transcript and other services 🌐
+   - Configure Twilio credentials for SMS integration 📱
 
-Now go to [http://localhost:4000](http://localhost:4000) and start chatting with your bot! The bot will automatically reload when you change the code.
+2. Implement the `on_message` function in `main.py`.
 
-_Simpler version using PyPI package and CLI coming soon!_
+3. Start the development server:
 
-## Contributions
+    ```
+    poetry run python personablend-ai/textbase/textbase_cli.py test main.py
+    ```
 
-Contributions are welcome! Please open an issue or a pull request.
+4. Go to http://localhost:4000 to start chatting with your PersonaBlend AI bot! The bot will automatically reload when you make changes to the code.
+
+## Future Enhancements 🌈
+
+- [ ] PyPI package for easy installation 📦
+- [ ] SMS integration using Twilio 📱
+- [ ] Web deployment via `textbase deploy` 🌐
+- [ ] Native integration of additional models (Claude, Llama, etc.) 🤩
+
+## Contributions 🤝
+
+Contributions are welcome! If you have any suggestions, feedback, or code improvements, feel free to open an issue or submit a pull request.
+
+Happy chatting with your PersonaBlend AI bot! 🌐🤖
+
