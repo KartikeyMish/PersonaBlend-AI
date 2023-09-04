@@ -28,6 +28,8 @@ Since it is just Python, you can use whatever models, libraries, vector database
 - distress-record for conversation history 📜
 - transcript and AWS integration (work in progress) 🌐
 - Twilio integration (work in progress) 📱
+> I have implemented these features in [YourCompanion](https://github.com/KartikeyMish/yourcompanion) .
+
 > For the API's Integration refer [models.py](https://github.com/KartikeyMish/textbase/blob/main/textbase/models.py) & realted to distress refer [voice.py](https://github.com/KartikeyMish/textbase/blob/main/textbase/voice.py)
 
 ## Installation and Setup 🛠️
